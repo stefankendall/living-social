@@ -20,11 +20,21 @@ body {
 
 .content {
   background-color: white;
-  padding: 1em;
+
+  .nav {
+    background-color: #454545;
+  }
 }
 
 #sign-up-form {
+  padding: 0 1em 0.5em 1em;
+
+  .location {
+    color: gray;
+  }
+
   .email-form {
+    @include single-box-shadow(rgba(black, 0.4), 1px, 1px);
     @include border-radius(4px, 4px);
     background-color: #e6e6e6;
 
@@ -32,17 +42,18 @@ body {
     margin-bottom: 1em;
 
     input[name=email] {
+      height: 2em;
       width: 95%;
       padding-right: 1em;
     }
 
     .subscriber-agreement {
-      font-size: 0.9em;
+      font-size: 0.85em;
       color: #909090;
     }
   }
 
-  .btn {
-    float: right;
+  p.button-holder {
+    text-align: right;
   }
 }
