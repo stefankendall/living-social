@@ -19,6 +19,7 @@ html {
 }
 
 body {
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
   background-color: transparent !important;
   @include background-image(linear-gradient(transparent, transparent 75%, black));
 }
@@ -62,6 +63,7 @@ body {
       a {
         background-color: transparent;
         @include border-radius(0px, 0px);
+        font-size: 90%;
 
         &:hover {
           background-color: transparent;
@@ -76,12 +78,16 @@ body {
   padding: 0 1em 0.5em 1em;
 
   .location {
-    color: gray;
+    color: #909090;
     margin-bottom: 0;
+    font-size:85%;
+    padding-top:0.5em;
   }
 
   h2 {
-    margin-top: 0;
+    font-weight: normal;
+    margin-top: -8px;
+    margin-bottom: 14px;
   }
 
   .email-form {
@@ -92,6 +98,10 @@ body {
     padding: 1em;
     margin-bottom: 1em;
 
+    label {
+      color: #454545;
+    }
+
     input[name=email] {
       height: 2em;
       width: 95%;
@@ -99,12 +109,16 @@ body {
     }
 
     .subscriber-agreement {
-      font-size: 0.85em;
+      font-size: 80%;
       color: #909090;
     }
   }
 
   p.button-holder {
     text-align: right;
+
+    .btn {
+      padding: 0.4em 1.5em;
+    }
   }
 }
