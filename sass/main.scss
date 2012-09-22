@@ -21,8 +21,35 @@ body {
 .content {
   background-color: white;
 
+  .logo {
+    margin: 0;
+    padding: 0.4em;
+    background-color: #262626;
+  }
   .nav {
     background-color: #454545;
+
+    li {
+      &.active {
+        a {
+          margin: 0;
+          padding-top: 9px;
+          padding-bottom: 10px;
+          @include background-image(linear-gradient(#09b9e3, #0898bb));
+          border-bottom: solid 1px #b2b2b2;
+        }
+      }
+
+      a {
+        background-color: transparent;
+        @include border-radius(0px, 0px);
+
+        &:hover {
+          background-color: transparent;
+          color: white;
+        }
+      }
+    }
   }
 }
 
@@ -31,6 +58,11 @@ body {
 
   .location {
     color: gray;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin-top: 0;
   }
 
   .email-form {
