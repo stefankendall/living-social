@@ -31,46 +31,56 @@ body {
 /* line 29, ../sass/main.scss */
 .content .nav {
   background-color: #454545;
+  margin-bottom: 1em;
 }
-/* line 34, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 .content .nav li.active a {
   margin: 0;
   padding-top: 9px;
-  padding-bottom: 10px;
+  padding-bottom: 11px;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #09b9e3), color-stop(100%, #0898bb));
   background-image: -webkit-linear-gradient(#09b9e3, #0898bb);
   background-image: -moz-linear-gradient(#09b9e3, #0898bb);
   background-image: -o-linear-gradient(#09b9e3, #0898bb);
   background-image: linear-gradient(#09b9e3, #0898bb);
-  border-bottom: solid 1px #b2b2b2;
 }
-/* line 43, ../sass/main.scss */
+/* line 42, ../sass/main.scss */
+.content .nav li.active .active-item-indicator {
+  height: 8px;
+  width: 15px;
+  margin-bottom: -14px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-image: url(../img/active-menu-item-indicator.png);
+}
+/* line 53, ../sass/main.scss */
 .content .nav li a {
   background-color: transparent;
   -webkit-border-radius: 0px 0px;
   -moz-border-radius: 0px / 0px;
   border-radius: 0px / 0px;
 }
-/* line 47, ../sass/main.scss */
+/* line 57, ../sass/main.scss */
 .content .nav li a:hover {
   background-color: transparent;
   color: white;
 }
 
-/* line 56, ../sass/main.scss */
+/* line 66, ../sass/main.scss */
 #sign-up-form {
   padding: 0 1em 0.5em 1em;
 }
-/* line 59, ../sass/main.scss */
+/* line 69, ../sass/main.scss */
 #sign-up-form .location {
   color: gray;
   margin-bottom: 0;
 }
-/* line 64, ../sass/main.scss */
+/* line 74, ../sass/main.scss */
 #sign-up-form h2 {
   margin-top: 0;
 }
-/* line 68, ../sass/main.scss */
+/* line 78, ../sass/main.scss */
 #sign-up-form .email-form {
   -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
@@ -82,18 +92,18 @@ body {
   padding: 1em;
   margin-bottom: 1em;
 }
-/* line 76, ../sass/main.scss */
+/* line 86, ../sass/main.scss */
 #sign-up-form .email-form input[name=email] {
   height: 2em;
   width: 95%;
   padding-right: 1em;
 }
-/* line 82, ../sass/main.scss */
+/* line 92, ../sass/main.scss */
 #sign-up-form .email-form .subscriber-agreement {
   font-size: 0.85em;
   color: #909090;
 }
-/* line 88, ../sass/main.scss */
+/* line 98, ../sass/main.scss */
 #sign-up-form p.button-holder {
   text-align: right;
 }
