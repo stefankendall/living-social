@@ -1,0 +1,13 @@
+@import "_base";
+
+.content {
+  .nav {
+    li {
+      &.active {
+        .active-item-indicator {
+          display:none;
+        }
+      }
+    }
+  }
+}

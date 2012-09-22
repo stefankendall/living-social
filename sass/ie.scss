@@ -1,5 +1,17 @@
-/* Welcome to Compass. Use this file to write IE specific override styles.
- * Import this file using the following HTML or equivalent:
- * <!--[if IE]>
- *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
- * <![endif]--> */
+@import "_base";
+
+.content {
+  .nav{
+    li {
+      &.active {
+        a {
+          background-color: $nav_item_dark_color_stop;
+
+          &:hover {
+            background-color: $nav_item_dark_color_stop;
+          }
+        }
+      }
+    }
+  }
+}
